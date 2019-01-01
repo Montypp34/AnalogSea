@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <img class="logo" src="images/logo.png">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <form action="/login">
+                    <label for="e-mail">Email</label>
+                    <input type="email" placeholder="foo@bar.com" id="e-mail" name="e-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <label for="pass">Password</label>
+                    <input type="password" placeholder="1234passw0rd" id="pass" name="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </main>
+    </body>
+</html>
